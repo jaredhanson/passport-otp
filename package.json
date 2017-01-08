@@ -1,0 +1,47 @@
+{
+  "name": "passport-mfa-otp",
+  "version": "0.0.0",
+  "description": "OTP multi-factor authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "otp",
+    "mfa",
+    "oath",
+    "hotp",
+    "totp",
+    "auth",
+    "authn",
+    "authentication"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/passport-mfa-otp.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/passport-mfa-otp/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-strategy": "1.x.x"
+  },
+  "devDependencies": {
+    "make-node": "^0.3.0",
+    "mocha": "^2.0.0",
+    "chai": "^3.0.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/*.test.js"
+  }
+}
