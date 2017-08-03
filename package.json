@@ -1,7 +1,7 @@
 {
-  "name": "passport-mfa-otp",
+  "name": "passport-otp",
   "version": "0.0.0",
-  "description": "OTP multi-factor authentication strategy for Passport.",
+  "description": "OTP authentication strategy for Passport.",
   "keywords": [
     "passport",
     "otp",
