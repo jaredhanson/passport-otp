@@ -11,10 +11,10 @@ describe('Strategy', function() {
     expect(strategy.name).to.equal('otp');
   });
   
-  it('should throw if constructed without a verify callback', function() {
+  it('should throw if constructed without a fetch callback', function() {
     expect(function() {
       var s = new Strategy();
-    }).to.throw(TypeError, 'OTPStrategy requires a verify callback');
+    }).to.throw(TypeError, 'OTPStrategy requires a fetch callback');
   });
   
 });
