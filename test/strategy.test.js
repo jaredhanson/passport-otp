@@ -7,7 +7,7 @@ describe('Strategy', function() {
     
   var strategy = new Strategy(function(){});
     
-  it('should be named local', function() {
+  it('should be named otp', function() {
     expect(strategy.name).to.equal('otp');
   });
   
