@@ -20,10 +20,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jaredhanson/passport-mfa-otp.git"
+    "url": "git://github.com/jaredhanson/passport-otp.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-mfa-otp/issues"
+    "url": "http://github.com/jaredhanson/passport-otp/issues"
   },
   "license": "MIT",
   "licenses": [
