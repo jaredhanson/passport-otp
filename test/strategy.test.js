@@ -181,4 +181,70 @@ describe('Strategy', function() {
     });
   }); // handling an request with invalid OTP
   
+  describe('handling an request without uid parameter', function() {
+    var algorithms = new Algorithms();
+    var algo = {
+      verify: function(authnr, otp, cb) {
+      }
+    }
+    algorithms.use('example', algo);
+    
+    var strategy = new Strategy(algorithms, function(uid, done) {
+    });
+    
+    var info, status;
+    
+    before(function(done) {
+      chai.passport.use(strategy)
+        .fail(function(i, s) {
+          info = i;
+          status = s;
+          done();
+        })
+        .req(function(req) {
+          req.body = { otp: '432028' };
+        })
+        .authenticate();
+    });
+    
+    it('should fail with info and status', function() {
+      expect(info).to.be.an.object;
+      expect(info.message).to.equal('Missing credentials');
+      expect(status).to.equal(400);
+    });
+  }); // handling an request without uid parameter
+  
+  describe('handling an request without otp parameter', function() {
+    var algorithms = new Algorithms();
+    var algo = {
+      verify: function(authnr, otp, cb) {
+      }
+    }
+    algorithms.use('example', algo);
+    
+    var strategy = new Strategy(algorithms, function(uid, done) {
+    });
+    
+    var info, status;
+    
+    before(function(done) {
+      chai.passport.use(strategy)
+        .fail(function(i, s) {
+          info = i;
+          status = s;
+          done();
+        })
+        .req(function(req) {
+          req.body = { uid: '501' };
+        })
+        .authenticate();
+    });
+    
+    it('should fail with info and status', function() {
+      expect(info).to.be.an.object;
+      expect(info.message).to.equal('Missing credentials');
+      expect(status).to.equal(400);
+    });
+  }); // handling an request without otp parameter
+  
 });
