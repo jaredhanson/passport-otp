@@ -34,7 +34,8 @@
   ],
   "main": "./lib",
   "dependencies": {
-    "passport-strategy": "1.x.x"
+    "passport-strategy": "1.x.x",
+    "speakeasy": "^2.0.0"
   },
   "devDependencies": {
     "make-node": "^0.3.0",
