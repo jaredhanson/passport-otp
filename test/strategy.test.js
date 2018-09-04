@@ -66,7 +66,7 @@ describe('Strategy', function() {
           done();
         })
         .req(function(req) {
-          req.body = { uid: '501', otp: '432028' };
+          req.body = { user_id: '501', otp: '432028' };
         })
         .authenticate();
     });
@@ -120,7 +120,7 @@ describe('Strategy', function() {
         })
         .req(function(req) {
           req.headers['host'] = 'acme.example.com';
-          req.body = { uid: '501', otp: '432028' };
+          req.body = { user_id: '501', otp: '432028' };
         })
         .authenticate();
     });
@@ -171,7 +171,7 @@ describe('Strategy', function() {
           done();
         })
         .req(function(req) {
-          req.body = { uid: '501', otp: '432028' };
+          req.body = { user_id: '501', otp: '432028' };
         })
         .authenticate();
     });
@@ -235,7 +235,7 @@ describe('Strategy', function() {
           done();
         })
         .req(function(req) {
-          req.body = { uid: '501' };
+          req.body = { user_id: '501' };
         })
         .authenticate();
     });
@@ -301,7 +301,7 @@ describe('Strategy', function() {
           done();
         })
         .req(function(req) {
-          req.body = { uid: '501', otp: '432028' };
+          req.body = { user_id: '501', otp: '432028' };
         })
         .authenticate();
     });
@@ -334,7 +334,7 @@ describe('Strategy', function() {
           done();
         })
         .req(function(req) {
-          req.body = { uid: '501', otp: '432028' };
+          req.body = { user_id: '501', otp: '432028' };
         })
         .authenticate();
     });
@@ -376,7 +376,7 @@ describe('Strategy', function() {
           done();
         })
         .req(function(req) {
-          req.body = { uid: '501', otp: '432028' };
+          req.body = { user_id: '501', otp: '432028' };
         })
         .authenticate();
     });
@@ -418,7 +418,7 @@ describe('Strategy', function() {
           done();
         })
         .req(function(req) {
-          req.body = { uid: '501', otp: '432028' };
+          req.body = { user_id: '501', otp: '432028' };
         })
         .authenticate();
     });
